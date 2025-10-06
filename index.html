@@ -1,8 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(ゝ∀･)</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "KaiTi", "STKaiti", "Microsoft YaHei", Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
 
+    .photo {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    figure {
+      margin: 0;
+    }
+  </style>
+</head>
 <body>
-  <h1>RXHHHA</h1>
-  <p>Hello World!</p>
-</body>
+  <p>拨雪寻春，烧灯续昼。</p>
+  <figure>
+    <img src="images/no_dead.png" alt="新奥尔良 - 2025年夏" class="photo">
+    <figcaption class="caption">看起来已经死了</figcaption>
+  </figure>
 
+  <figure>
+    <img src="images/la_yolanda.png" alt="洛杉矶 - 2025年春" class="photo">
+    <figcaption class="caption">猫猫和四个小人</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/ny_trust.png" alt="纽约 - 2024年春" class="photo">
+    <figcaption class="caption">最爱魅魔！！！</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/chi_oriole.png" alt="芝加哥 - 2024年春" class="photo">
+    <figcaption class="caption">或许是人生最后一次尝试fine dining？</figcaption>
+  </figure>
+</body>
 </html>
