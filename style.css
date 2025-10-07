@@ -1,11 +1,63 @@
 body {
-    font-family: "KaiTi", "STKaiti", "Microsoft YaHei", Arial, sans-serif;
+    margin: 0;
+    background: rgb(188, 218, 213, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px 20px 20px;
+    color: #4b526a;
 }
-img {
-    max-width: 100%;
+
+.photo {
+    max-width: 50%;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #9493b3;
+    transition: transform 0.3s;
 }
+
+.photo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #57755c;
+}
+
 figure {
-  display: block;
-  margin-bottom: 20px; 
+    margin: 0;
+    text-align: center;
+}
+
+:lang(zh) {
+  font-family: "KaiTi", "STKaiti", "Microsoft YaHei", Arial, sans-serif;
+}
+
+:lang(en) {
+  font-family: "Georgia", "Times New Roman", Arial, serif;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #bcdad5;
+  color: #d56709;
+  font-size: 14px;
+  /* position: fixed; */
+  bottom: 0;       
+  left: 0;
 }
